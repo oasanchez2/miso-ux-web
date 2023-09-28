@@ -1,7 +1,7 @@
 <!-- Vista parcial de Alarmas -->
 <div class="row">
     <!-- Columna 1 -->
-    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="col-lg-4 col-md-6 col-sm-12">
         <h1>ALARMAS</h1>
         <h3>CANTIDAD ACTUAL: 2</h3>
         <ul class="alarm-list">
@@ -36,15 +36,25 @@
     </div>
 
     <!-- Columna 2 -->
-    <div class="col-lg-6 col-md-6 col-sm-12 text-right justify-content-end">
-        <div class="btn-right ml-auto">
-            <button class="btn btn-primary" id="btn-crear-alarmas">
-                <i class="fas fa-plus"></i> Agregar
-            </button>
-        </div>        
+    <div class="col-lg-8 col-md-6 col-sm-12">
+        <!-- Fila 1: Botón "Agregar" -->
+        <div class="row">
+            <div class="col-12 text-right">
+                <button class="btn btn-primary" id="btn-crear-alarmas">
+                    <i class="fas fa-plus"></i> Agregar
+                </button>
+            </div>
+        </div>
+
+        <!-- Fila 2: Control para cargar una imagen -->
+        <div class="row">
+            <div class="col-12">
+                <div id="contenidoCrearAlarma">
+                    <!-- Contenido dinámico se cargará aquí -->
+                </div>
+            </div>
+        </div>                
     </div>
 
-    <div id="contenidoCrearAlarma">
-        <!-- Contenido dinámico se cargará aquí -->
-    </div>
+
 </div>
