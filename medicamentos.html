@@ -1,1 +1,47 @@
-<h2>Medicamentos</h2>
+<!-- Vista parcial de medicamentos -->
+<div class="row">
+    <!-- Columna 1 -->
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <h1>TIPOS DE MEDICAMENTOS</h1>
+        <h3>CANTIDAD ACTUAL: 2</h3>
+        <ul class="alarm-list">
+            <!-- Tipo  1 -->
+            <li>
+                <div class="alarm-item">
+                    <div class="left">
+                        <i class="fas fa-pills"></i>
+                        <span class="med-name">Tabletas</span>                        
+                    </div>
+                    <div class="right">                        
+                        <i class="fas fa-trash-alt red"></i>
+                    </div>
+                </div>
+            </li>
+            <!-- Tipo 2 -->
+            <li>
+                <div class="alarm-item">
+                    <div class="left">
+                        <i class="fas fa-pills"></i>
+                        <span class="med-name">Gotas</span>
+                    </div>
+                    <div class="right">                        
+                        <i class="fas fa-trash-alt red"></i>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Columna 2 -->
+    <div class="col-lg-6 col-md-6 col-sm-12 text-right justify-content-end">
+        <div class="btn-right ml-auto">
+            <button class="btn btn-primary" id="btn-crear-medicamento">
+                <i class="fas fa-plus"></i> Agregar
+            </button>
+        </div>        
+    </div>
+    
+    <div id="contenidoCrearMedicamento">
+        <!-- Contenido dinámico se cargará aquí -->
+    </div>
+</div>

@@ -1,0 +1,69 @@
+<!-- Vista parcial para crear alarmas -->
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <!-- Fila 1: Título -->
+        <div class="row">
+            <div class="col-12">
+                <h1>NUEVA ALARMA</h1>
+            </div>
+        </div>
+        
+        <!-- Fila 2: Hora -->
+        <div class="row">
+            <div class="col-12">
+                <label for="hora">Hora</label>
+            </div>
+        </div>
+
+        <!-- Fila 3: Selector de Hora -->
+        <div class="row">
+            <div class="col-6">
+                <input type="text" id="hora" name="hora" class="form-control" placeholder="HH:mm" required>
+            </div>
+            <div class="col-6">
+                <!-- Radio buttons para AM y PM -->
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-secondary active rounded-left">
+                        <input type="radio" name="periodo" id="am" value="AM" autocomplete="off" checked> AM
+                    </label>
+                    <label class="btn btn-secondary rounded-right">
+                        <input type="radio" name="periodo" id="pm" value="PM" autocomplete="off"> PM
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fila 4: Espacio en blanco -->
+        <div class="row">
+            <div class="col-12">
+                &nbsp;
+            </div>
+        </div>
+
+        <!-- Fila 5: Medicamento -->
+        <div class="row">
+            <div class="col-12">
+                <label for="medicamento">Medicamento</label>
+            </div>
+        </div>
+
+        <!-- Fila 6: Lista desplegable -->
+        <div class="row">
+            <div class="col-12">
+                <select id="medicamento" name="medicamento" class="form-control">
+                    <option value="Tabletas">Tabletas</option>
+                    <option value="Gotas">Gotas</option>
+                    <option value="Jarabe">Jarabe</option>
+                    <option value="Inyectable">Inyectable</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Fila 7: Botón "Guardar datos" -->
+        <div class="row">
+            <div class="col-12 text-right">
+                <button class="btn btn-success">Guardar datos</button>
+            </div>
+        </div>
+    </div>
+</div>

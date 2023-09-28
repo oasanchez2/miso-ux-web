@@ -1,20 +1,35 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    color: #5C677F;
+    font-size: 30px;
+}
+h3 {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+}
+label {
+    color: #5C677F;
+    font-size: 14px;
+}
 .logo {
     display: flex;
     align-items: center; /* Centrar verticalmente el contenido */
 }
 
-.logo-img {
-    max-width: 50px; /* Tamaño máximo de la imagen (ajusta según sea necesario) */
-    height: auto;
-    margin-right: 10px; /* Espaciado entre la imagen y el texto */
-}
 .logo-text {
     font-size: 1.5em; /* Tamaño del texto (ajusta según sea necesario) */
 }
 
 /* Estilos para el logo */
 .logo img {
-    max-width: 100%;
+    max-width: 50px; /* Tamaño máximo de la imagen (ajusta según sea necesario) */
+    height: auto;
+    margin-right: 10px; /* Espaciado entre la imagen y el texto */
 }
 
 /* Estilos para las opciones de menú */
@@ -26,6 +41,10 @@
 .menu {
     list-style: none;
     padding: 0;
+    margin-right: 10px;
+    font-size: 17px;
+    color: #fff;
+    vertical-align: middle;
 }
 
 .menu li {
@@ -65,5 +84,87 @@
     background-color: #E3E9F5;    
 }
 
-/* Estilos adicionales para la página */
-/* Agrega estilos según tus necesidades */
+/* Estilos para la vista parcial de Alarmas */
+#contenidoDinamico{
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.btn-right{
+    display: flex;
+    align-items: center;
+}
+
+.alarm-list {
+    list-style: none;
+    padding: 0;
+}
+.alarm-list li {
+    margin-bottom: 10px;
+     /* Borde inferior blanco para separar las opciones del menú */
+     border-bottom: 1px solid #D9D9D9;
+     padding-bottom: 5px; /* Espacio entre el texto y la línea */
+}
+.alarm-item {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para la parte izquierda (ícono de píldora y nombre) */
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.med-name {
+    margin-left: 10px;
+    color: #5C677F;
+    font-size: 18px;
+}
+.alarm-time{
+    margin-left: 10px;
+    color: #5C677F;
+    font-size: 12px;
+}
+
+/* Estilos para la parte derecha (hora y ícono de basura) */
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.fa-pills {    
+    margin-right: 10px;
+}
+
+.fa-clock {
+    margin-right: 10px;
+}
+
+.red {
+    color: red; /* Color del icono de basura */
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.btn-group .btn {
+    border-radius: 0; /* Elimina los bordes redondeados en los botones */
+}
+
+/* Estilo personalizado para el control de carga de archivos */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C1C7CD;
+    border: 1px solid #999;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Ocultar el control de carga de archivos original */
+input[type="file"] {
+    display: none;
+}

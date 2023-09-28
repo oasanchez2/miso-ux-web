@@ -1,1 +1,50 @@
-<h2>Alarmas</h2>
+<!-- Vista parcial de Alarmas -->
+<div class="row">
+    <!-- Columna 1 -->
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <h1>ALARMAS</h1>
+        <h3>CANTIDAD ACTUAL: 2</h3>
+        <ul class="alarm-list">
+            <!-- Alarma 1 -->
+            <li>
+                <div class="alarm-item">
+                    <div class="left">
+                        <i class="fas fa-pills"></i>
+                        <span class="med-name">Acetaminofen</span>
+                        <span class="alarm-time">08:00 AM</span>
+                    </div>
+                    <div class="right">                        
+                        <i class="fas fa-trash-alt red"></i>
+                    </div>
+                </div>
+            </li>
+            <!-- Alarma 2 -->
+            <li>
+                <div class="alarm-item">
+                    <div class="left">
+                        <i class="fas fa-pills"></i>
+                        <span class="med-name">Acetimibe</span>
+                        <span class="alarm-time">12:00 PM</span>
+                    </div>
+                    <div class="right">
+                        
+                        <i class="fas fa-trash-alt red"></i>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Columna 2 -->
+    <div class="col-lg-6 col-md-6 col-sm-12 text-right justify-content-end">
+        <div class="btn-right ml-auto">
+            <button class="btn btn-primary" id="btn-crear-alarmas">
+                <i class="fas fa-plus"></i> Agregar
+            </button>
+        </div>        
+    </div>
+
+    <div id="contenidoCrearAlarma">
+        <!-- Contenido dinámico se cargará aquí -->
+    </div>
+</div>
