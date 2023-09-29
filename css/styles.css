@@ -21,6 +21,19 @@ label {
     align-items: center; /* Centrar verticalmente el contenido */
 }
 
+/* Aplicar estilo a todos los campos input de tipo texto */
+input[type="text"] {
+    border: 1px solid #5C677F; /* Ejemplo de estilo de borde */
+    background-color: rgba(92, 103, 127, 0.1); /* Ejemplo de estilo de fondo */
+    color: #000;
+    padding: 5px;
+  }
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .logo-text {
     font-size: 1.5em; /* Tamaño del texto (ajusta según sea necesario) */
 }
@@ -178,4 +191,35 @@ input[type="file"] {
 
 .margen-vistas-creacion{
     margin-left: 80px;
+}
+
+/* Estilo del título */
+.modal-title {
+    color: #5C677F;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo de la descripción */
+.modal-description {
+    color: #5C677F;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Estilo del botón "Sí" */
+.btn-si {
+    background-color: #28A745;
+    border-color: #28A745;
+    color: #fff;
+    font-size: 1.25rem; /* Tamaño mediano */
+}
+
+/* Estilo del botón "No" */
+.btn-no {
+    background-color: #DC3545;
+    border-color: #DC3545;
+    color: #fff;
+    font-size: 1.25rem; /* Tamaño mediano */
 }

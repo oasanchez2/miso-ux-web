@@ -20,26 +20,30 @@
             <!-- Columna izquierda con el logo y el menú -->
             <div id="panelMenu" class="col-lg-2 col-md-3 col-sm-12">
                 <div class="logo">
-                    <img src="images/logo.png" alt="Logo de la aplicación" class="logo-img">
-                    <span class="logo-text">Alarmy</span>
+                    <a href="./index.html">
+                        <img src="images/logo.png" alt="Logo de la aplicación" class="logo-img">
+                        <span class="logo-text">Alarmy</span>
+                    </a>
                 </div>
                 <!-- Separación entre el logo y las opciones de menú -->
                 <div class="menu-options">
                     <ul class="menu">
-                        <li><a href="#" id="cargarAlarmas"><i class="fas fa-clock"></i>ALARMAS</a></li>
-                        <li><a href="#" id="cargarMedicamentos"><i class="fas fa-pills"></i>MEDICAMENTOS</a></li>
+                        <li><a href="./alarmas.html" id=""><i class="fas fa-clock"></i>ALARMAS</a></li>
+                        <li><a href="./medicamentos.html" id=""><i class="fas fa-pills"></i>MEDICAMENTOS</a></li>
                     </ul>
                 </div>
             </div>    
             <!-- Columna derecha dividida en dos filas -->
-            <div class="col-lg-10 col-md-8 col-sm-12">
+            <div class="col-lg-10 col-md-9 col-sm-12">
                 <!-- Primera fila con el header y el icono de administrador -->
                 <div id="divheader" class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <header>
                             <div class="admin-option">
                                 <a href="#">
-                                    <i class="fas fa-user-circle fa-2x"></i> Administrador
+                                    <i class="fa fa-user-circle fa-2x"></i> Administrador
+                                    <br>
+                                    <br>
                                 </a>
                             </div>
                         </header>
@@ -56,6 +60,6 @@
     </div>
 
     <!-- Scripts personalizados (jQuery) -->
-    <script src="./js/scripts.js" type="text/javascript"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
